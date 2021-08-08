@@ -1,2 +1,2 @@
-const Url = "http://localhost:1337/";
+const Url = "http://localhost:1337";
 export default Url;

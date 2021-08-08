@@ -1,13 +1,33 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 export const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
-  const [user, setUser] = React.useState(
-    "dasiloy is the base user"
-  );
+  const [isLogInOpen, setIsLogInOpen] = useState(true);
+  const [User, setUser] = useState({
+    username: "",
+    token: "",
+  });
+
+  const updateUser = (newUser) => {
+    setUser(newUser);
+  };
+
+  const openLogInModal = () => {
+    setIsLogInOpen(true);
+  };
+  const closeLogInModal = () => {
+    setIsLogInOpen(false);
+  };
   return (
-    <AppContext.Provider value={{ user }}>
+    <AppContext.Provider
+      value={{
+        User,
+        updateUser,
+        openLogInModal,
+        closeLogInModal,
+        isLogInOpen,
+      }}>
       {children}
     </AppContext.Provider>
   );

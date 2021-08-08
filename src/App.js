@@ -4,13 +4,18 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { Header } from "./componenets/Header";
+import LogIn from "./pages/LogIn";
+import { Testing } from "./pages/Testing.js";
 
 const App = () => {
   return (
     <Router>
-      <Header />
-      <Switch></Switch>
+      <LogIn />
+      <Switch>
+        <Route path='/'>
+          <Testing/>
+        </Route>
+      </Switch>
     </Router>
   );
 };

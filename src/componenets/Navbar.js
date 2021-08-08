@@ -6,7 +6,7 @@ import React, {
   useContext
 } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { links, social } from "../data/Navdata";
+import { links, social } from "../utilis/Navdata";
 import { Link } from "react-router-dom";
 import {AppContext} from '../App'
 
