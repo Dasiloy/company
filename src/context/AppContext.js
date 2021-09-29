@@ -1,38 +1,35 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useReducer } from "react";
+import appStore from "../reducer/Store";
+import Reducer from "../reducer/Reducer";
+import { ADD_COMMENTS } from "../reducer/Actions";
 
-export const AppContext = React.createContext();
+const AppContext = React.createContext();
 
-export const AppProvider = ({ children }) => {
-  const [isLogInOpen, setIsLogInOpen] = useState(true);
-  const [User, setUser] = useState({
-    username: "",
-    token: "",
-  });
+const AppProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(Reducer, appStore);
 
-  const updateUser = (newUser) => {
-    setUser(newUser);
+  /* ADDCOMMENTS */
+  const addComments = () => {
+    let commentDetails = {
+      id: 1,
+      author: "dasiloy",
+      comment: "life is sweet if you know what you want",
+    };
+    dispatch({
+      type: ADD_COMMENTS,
+      payload: commentDetails,
+    });
   };
 
-  const openLogInModal = () => {
-    setIsLogInOpen(true);
-  };
-  const closeLogInModal = () => {
-    setIsLogInOpen(false);
-  };
   return (
-    <AppContext.Provider
-      value={{
-        User,
-        updateUser,
-        openLogInModal,
-        closeLogInModal,
-        isLogInOpen,
-      }}>
+    <AppContext.Provider value={{ state, addComments }}>
       {children}
     </AppContext.Provider>
   );
 };
 
-export const useGlobalContext = () => {
+const useGlobalContext = () => {
   return useContext(AppContext);
 };
+
+export { useGlobalContext, AppProvider };

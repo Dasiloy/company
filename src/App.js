@@ -1,23 +1,9 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import LogIn from "./pages/LogIn";
-import { Testing } from "./pages/Testing.js";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 const App = () => {
-  return (
-    <Router>
-      <LogIn />
-      <Switch>
-        <Route path='/'>
-          <Testing/>
-        </Route>
-      </Switch>
-    </Router>
-  );
+  return <Home />;
 };
 
 App.propTypes = {};
