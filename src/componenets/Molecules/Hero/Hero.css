@@ -58,7 +58,7 @@
 }
 
 .hero {
-  min-height: 75vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
 }
@@ -127,7 +127,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--cir-primary-3);
-    min-height: 90vh;
+    min-height: 80vh;
   }
 
   .hero h1 {
