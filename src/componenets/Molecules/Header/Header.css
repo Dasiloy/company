@@ -1,0 +1,242 @@
+:root {
+  --clr-primary-1: #fff;
+  --cir-primary-2: #fbfbfb;
+  --cir-primary-3: #f1f1f1;
+  --cir-secondary-1: #000;
+  --cir-secondary-2: #111;
+  --cir-secondary-3: #1b1b1b;
+  --primary-font: ;
+  --secondary-font: ;
+  --cir-section-light-bcg: #fff;
+  --cir-section-dark-bcg: #1b1b1b;
+  --cir-section-title: #ddd;
+  --cir-progress-left: #e8edf5;
+  --clr-btn: #e76668;
+  --cir-btn-hover: #e03a3c;
+  --cir-btn-radius: 20px;
+  --cir-text-dark: #444;
+  --cir-body-text: #111;
+  --cir--muted-text: #c9caca;
+  --cir-hero-text-muted: #f7f4f4;
+  --cir-text-white: #fff;
+  --clr-white: #fff;
+  --cir-close: red;
+  --cir-black: #000;
+  --cir-logo-col: #111;
+  --cir-link-col: #111;
+  --cir-link-hover: #b19d9e;
+  --cir-footer-top-bcg: #1b1b1b;
+  --cir-footer-bottom-bcg: #111;
+  --cir-footer-contact-heading: #e35052;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --thick-radius: 0.6rem;
+  --mainSpacing: 0.15rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  --footer-submit-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  --cir-border-special: 1px solid #e0e5e2;
+  --cir-modal-overlay: #f8f1f1;
+  --max-width: 1200px;
+  --fixed-width: 450px;
+  --card-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  --card-radius: 0.25rem;
+}
+
+.header {
+  background-color: var(--clr-primary-1);
+  color: var(--cir-black);
+  overflow-x: hidden;
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  min-height: 40px;
+}
+
+.link {
+  color: black;
+  transition: var(--transition);
+}
+
+.link:hover {
+  color: var(--cir-link-hover);
+}
+
+.header .header-centered {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.header-icon {
+  display: flex;
+  min-height: 30px;
+  align-items: baseline;
+}
+
+.header-toggle-icon {
+  margin-left: auto;
+  transition: var(--transition);
+  font-size: 1.2rem;
+}
+
+.header-icon-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.header-toggle-on {
+  color: var(--cir-close);
+  transition: var(--transition);
+  font-size: 1.5rem;
+}
+
+.header-red {
+  color: var(--cir-close);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: var(--cir-close);
+  margin-left: 1px;
+}
+
+.header-body {
+  position: fixed;
+  overflow-x: hidden;
+  height: 100vh;
+  background: var(--cir-primary-2);
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: 2;
+  transition: all 0.15s linear;
+}
+
+.header-body-mobile {
+  width: 90vw;
+}
+
+.header-links,
+.header-social {
+  margin-left: 20px;
+}
+
+.header-links {
+  margin-top: 100px;
+  font-size: 2.5rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+.header-link {
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.header-social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.social-title {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.social-header {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-centered {
+    width: 92vw;
+    padding: 0.3rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .header-toggle-icon {
+    display: none;
+  }
+
+  .header-body {
+    position: relative;
+    overflow-x: hidden;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: var(--cir-primary-1);
+    min-width: 75%;
+    z-index: 1;
+  }
+
+  .header-links,
+  .header-social {
+    margin-left: 2px;
+  }
+
+  .header-links {
+    margin-top: 0;
+    display: flex;
+    align-items: baseline;
+    font-size: normal;
+    margin: 0 0 0 90px;
+  }
+
+  .header-link {
+    font-size: 2.2rem;
+    margin-right: 12px;
+  }
+
+  .header-social {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: baseline;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    margin-right: 12px;
+  }
+
+  .social-title {
+    display: none;
+  }
+
+  .social-header {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .header-link {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-links {
+    margin-top: 0;
+    display: flex;
+    align-items: baseline;
+    font-size: normal;
+    margin: 0 0 0 200px;
+  }
+}

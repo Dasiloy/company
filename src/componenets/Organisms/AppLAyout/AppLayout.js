@@ -1,15 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
+import Header from "../../Molecules/Header/Header";
+import Footer from "../../Molecules/Footer/Footer";
 
 const AppLayout = ({ children }) => {
   return (
     <main>
-      hello world
+      <Header />
       {children}
+      <Footer />
     </main>
   );
 };
-
-AppLayout.propTypes = {};
 
 export default AppLayout;

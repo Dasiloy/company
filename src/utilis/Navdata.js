@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  FaBehance,
   FaFacebook,
   FaLinkedin,
   FaTwitter,
+  FaInstagram,
 } from "react-icons/fa";
 export const links = [
   {
@@ -13,45 +13,34 @@ export const links = [
   },
   {
     id: 2,
-    url: "/about",
-    text: "about",
-  },
-  {
-    id: 3,
-    url: "/courses",
-    text: "courses",
-  },
-  {
-    id: 4,
-    url: "/trainers",
-    text: "trainers",
-  },
-  {
-    id: 6,
-    url: "/contact",
-    text: "contact",
+    url: "/article",
+    text: "articles",
   },
 ];
 
 export const social = [
   {
     id: 1,
-    url: "https://www.twitter.com",
+    url: "https://www.Facebook.com",
     icon: <FaFacebook />,
+    text: "Facebook",
   },
   {
     id: 2,
     url: "https://www.twitter.com",
     icon: <FaTwitter />,
+    text: "Twitter",
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
+    url: "https://www.Linkedin.com",
     icon: <FaLinkedin />,
+    text: "Linkedin",
   },
   {
     id: 4,
-    url: "https://www.twitter.com",
-    icon: <FaBehance />,
+    url: "https://www.instagram.com",
+    icon: <FaInstagram />,
+    text: "Instagram",
   },
 ];

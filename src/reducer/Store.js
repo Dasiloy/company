@@ -1,6 +1,6 @@
 let appStore = {
-  isLoading: true,
-  isUserLogIn: false,
+  isPageLoading: true,
+  isBlogLoading: true,
   user: {
     username: "",
     usertoken: "",
