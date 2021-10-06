@@ -45,7 +45,7 @@
 }
 
 #hero {
-  min-height: 75vh;
+  min-height: 90vh;
   background: linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.65)
@@ -58,7 +58,7 @@
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
 }
@@ -127,7 +127,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--cir-primary-3);
-    min-height: 80vh;
+    min-height: 70vh;
+  }
+
+  .hero {
+    min-height: 70vh;
   }
 
   .hero h1 {
@@ -149,5 +153,14 @@
     padding: 15px 25px;
     font-size: 1.1rem;
     margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    min-height: 80vh;
+  }
+  .hero {
+    min-height: 79vh;
   }
 }
