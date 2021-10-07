@@ -14,7 +14,10 @@ const HomeBody = () => {
   return (
     <section className='section'>
       <main className='home-blogs'>
-        <h2>Recent posts</h2>
+        <div className='body-header'>
+          <h2>Recent posts</h2>
+          <div className="header-ruler"></div>
+        </div>
         <div className='blogs-container'>
           {Furnishing.map((blog) => {
             return (

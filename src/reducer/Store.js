@@ -1,5 +1,5 @@
 let appStore = {
-  isPageLoading: true,
+  isPageLoading: false,
   isBlogLoading: true,
   user: {
     username: "",
