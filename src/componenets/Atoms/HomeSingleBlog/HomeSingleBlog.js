@@ -21,7 +21,7 @@ const HomeSingleBlog = ({
   return (
     <article className='single-blog'>
       <img
-        src='./images/hero-bg.jpg'
+        src={image_url}
         alt='blog'
         className='blog-image'
       />
