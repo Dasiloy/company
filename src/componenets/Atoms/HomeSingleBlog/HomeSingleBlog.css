@@ -60,10 +60,10 @@
   color: var(--cir-text-white);
   background-color: var(--cir-secondary-3);
   border-radius: var(--radius);
-  width: 115px;
+  width: 110px;
   padding-left: 8px;
-  padding-top: 4px;
-  padding-bottom: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin-bottom: 10px;
 }
 .blog-author {
