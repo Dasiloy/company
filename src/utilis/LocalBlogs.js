@@ -2,7 +2,7 @@ const blogs = [
   {
     id: 1,
     author: "Ben carson",
-    image_url: "./images/BerKeley-73.jpg",
+    image_url: "./images/hero-bg.jpg",
     content: ` Lorem ipsum dolor, sit amet consectetur adipisicing
       elit. Veniam, explicabo in aspernatur, nemo eius
       accusantium labore atque unde consectetur asperiores

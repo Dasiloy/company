@@ -37,7 +37,7 @@ const Header = () => {
                     to={url}
                     className='link'
                     onClick={() => setIsToggleOn(false)}>
-                    <h6>{text}</h6>
+                    <h3>{text}</h3>
                   </Link>
                 </li>
               );
